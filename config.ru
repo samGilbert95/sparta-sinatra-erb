@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'sinatra/reloader' if development?
 require 'sinatra/contrib'
-require_relative './controllers/movies_controller.rb'
+require_relative './controllers/song_controller.rb'
 
 use Rack::Reloader
 use Rack::MethodOverride
