@@ -1,0 +1,8 @@
+<h1>HOME</h1>
+<% @music.each do |music| %>
+<h2> <a href="/music/<%= music[:id] %>"> <%= music[:track] %></a></h3>
+<h3><%= music[:game] %></h3>
+<h4><%= music[:artist] %></h3>
+<h5><%= music[:release] %></h3>
+<% end %>
+<a href="music/new">New Music</a>

@@ -1,0 +1,11 @@
+<h1>DISPLAY PAGE</h1>
+<h2><%= @music[:track] %></h3>
+<h3><%= @music[:game] %></h3>
+<h4><%= @music[:artist] %></h3>
+<h5><%= @music[:release] %></h3>
+<a href="/music"> Main Page</a>
+<a href="/music/<%= @music[:id] %>/edit"> Edit</a>
+<form class="" action="index.html" method="post">
+  <input type="hidden" name="_method" value="DELETE">
+  <input class="btn btn-danger" type="submit" value="Delete">
+</form>
